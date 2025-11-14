@@ -1,7 +1,18 @@
-# Python Inventory Management System
+# Activity 1
+
 
 ## Activity Title
 **Inventory Management System - A Python Console Application**
+
+## Author
+``Rho Alphonce E. Jornadal``
+
+
+## Sample output from the instructions
+![Sample Output](images/sample%20output.png)
+
+## Sample output from my take
+![My Sample Ouput](images/my%20sample%20output.png)
 
 ## Problem Description
 This program implements a simple inventory management system that allows users to manage items and their prices. The system is designed with the following specifications:
@@ -32,11 +43,6 @@ This program implements a simple inventory management system that allows users t
 - Implements loops for menu navigation
 - Uses conditionals for input validation and error handling
 
-## Sample output from the instructions
-![Sample Output](images/sample%20output.png)
-
-## Sample output from my take
-![My Sample Ouput](images/my%20sample%20output.png)
 
 ## How to Run the Program
 
@@ -56,6 +62,3 @@ This program implements a simple inventory management system that allows users t
 - **Functions**: Modular code organization with separate functions for each operation
 - **Error Handling**: Try-except blocks for validating input
 - **User Input**: Interactive console-based interface
-
-## Author
-**Yours truly, Loftyyyy**
