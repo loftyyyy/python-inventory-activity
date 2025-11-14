@@ -2,13 +2,14 @@ def main():
     items = []
     item_prices = {}
 
-    print("====================== INVENTORY MENU ======================")
-    print("[1] Add Items")
-    print("[2] Update Price")
-    print("[3] Exit")
 
     while True:
         try: 
+            
+            print("====================== INVENTORY MENU ======================")
+            print("[1] Add Items")
+            print("[2] Update Price")
+            print("[3] Exit")
 
             input_option = input("Choice: ")
 
@@ -21,7 +22,7 @@ def main():
                     continue
                 
                 item_price = float(input("Enter item price: "))
-                if(item_price < 0 | type(item_price) != float):
+                if(item_price < 0):
                     print("Price cannot be negative or not a number. Please try again.\n")
                     continue
 
@@ -39,7 +40,7 @@ def main():
                 else:
                     item_price = float(input("Enter new item price: "))
 
-                    if(item_price < 0 | type(item_price) != float):
+                    if(item_price < 0): 
                         print("Price cannot be negative or not a number. Please try again.\n")
                         continue
 
@@ -56,7 +57,7 @@ def main():
                 print("Invalid option. Please try again.\n")
 
         except Exception as e:
-            print(f"An error occurred: {e}\n")
+            print(f"An error occurred: {e}. Please try again\n")
 
 
 if __name__ == "__main__":
