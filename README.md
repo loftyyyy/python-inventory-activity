@@ -1,12 +1,10 @@
-# Activity 1
-
+# Assignment for Programming Languages CS15L(4404)
 
 ## Activity Title
-**Inventory Management System - A Python Console Application**
+**Activity 1 - Python Inventory System**
 
 ## Author
 ``Rho Alphonce E. Jornadal``
-
 
 ## Sample output from the instructions
 ![Sample Output](images/sample%20output.png)
