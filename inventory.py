@@ -16,6 +16,10 @@ def inventory():
 
                 item_name = input("Enter item name to add: ")
                 
+                if(item_name.strip() == ""):
+                    print("Item name cannot be empty. Please try again.\n")
+                    continue
+                
                 if(item_name in items):
                     print(f"Item '{item_name}' already exists in inventory.\n")
                     continue
@@ -37,7 +41,12 @@ def inventory():
                     continue
 
             elif input_option == "2":
+
                 item_name = input("Enter item name to update: ")
+
+                if(item_name.strip() == ""):
+                    print("Item name cannot be empty. Please try again.\n")
+                    continue
 
                 if(item_name not in items):
                     print(f"Item '{item_name}' not found in inventory.\n")
