@@ -36,7 +36,7 @@ This program implements a simple inventory management system that allows users t
 ![Sample Output](images/sample%20output.png)
 
 ## Sample output from my take
-![]()
+![My Sample Ouput](images/my%20sample%20output.png)
 
 ## How to Run the Program
 
