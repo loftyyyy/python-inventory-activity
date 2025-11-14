@@ -32,7 +32,10 @@ This program implements a simple inventory management system that allows users t
 - Implements loops for menu navigation
 - Uses conditionals for input validation and error handling
 
-## Sample Output
+## Sample output from the instructions
+![Sample Output](images/sample%20output.png)
+
+## Sample output from my take
 ![]()
 
 ## How to Run the Program

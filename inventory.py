@@ -2,15 +2,14 @@ def main():
     items = []
     item_prices = {}
 
+    print("====================== INVENTORY MENU ======================")
+    print("[1] Add Items")
+    print("[2] Update Price")
+    print("[3] Exit\n")
 
     while True:
         try: 
-            
-            print("====================== INVENTORY MENU ======================")
-            print("[1] Add Items")
-            print("[2] Update Price")
-            print("[3] Exit")
-
+        
             input_option = input("Choice: ")
 
             if input_option == "1":
@@ -29,8 +28,7 @@ def main():
                 items.append(item_name)
                 item_prices[item_name] = item_price
                     
-                print(f"Item '{item_name}' with price {item_price} added to inventory. Please try again")
-                print("Item added successfully")
+                print(f"Item '{item_name}' with price {item_price} was added to inventory successfully!\n")
 
             elif input_option == "2":
                 item_name = input("Enter item name to update: ")
@@ -47,8 +45,8 @@ def main():
                     previous_price = item_prices[item_name]
                     item_prices[item_name] = item_price
                     
-                    print(f"Price for item '{item_name}', updated from {previous_price} to {item_price}.\n")
-                    print("Price updated successfully")
+                    print(f"Price for item '{item_name}', updated from {previous_price} to {item_price}.")
+                    print("Price updated successfully!\n")
 
             elif input_option == "3":
                 print("Exiting the inventory menu. Goodbye!")
