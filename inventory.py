@@ -1,4 +1,4 @@
-def main():
+def inventory():
     items = []
     item_prices = {}
 
@@ -31,9 +31,11 @@ def main():
                     item_prices[item_name] = item_price
                         
                     print(f"Item '{item_name}' with price {item_price} was added to inventory successfully!\n")
+
                 except ValueError:
                     print("Invalid price input. Please enter a valid number.\n")
                     continue
+
             elif input_option == "2":
                 item_name = input("Enter item name to update: ")
 
@@ -54,6 +56,7 @@ def main():
                         
                         print(f"Price for item '{item_name}', updated from {previous_price} to {item_price}.")
                         print("Price updated successfully!\n")
+
                     except ValueError:
                         print("Invalid price input. Please enter a valid number.\n")
 
@@ -68,4 +71,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    inventory()
