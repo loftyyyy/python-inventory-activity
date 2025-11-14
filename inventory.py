@@ -21,8 +21,8 @@ def main():
                     continue
                 
                 item_price = float(input("Enter item price: "))
-                if(item_price < 0):
-                    print("Price cannot be negative. Please try again.\n")
+                if(item_price < 0 | type(item_price) != float):
+                    print("Price cannot be negative or not a number. Please try again.\n")
                     continue
 
                 items.append(item_name)
@@ -39,8 +39,8 @@ def main():
                 else:
                     item_price = float(input("Enter new item price: "))
 
-                    if(item_price < 0):
-                        print("Price cannot be negative. Please try again.\n")
+                    if(item_price < 0 | type(item_price) != float):
+                        print("Price cannot be negative or not a number. Please try again.\n")
                         continue
 
                     previous_price = item_prices[item_name]
