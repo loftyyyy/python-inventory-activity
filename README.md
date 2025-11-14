@@ -58,4 +58,4 @@ This program implements a simple inventory management system that allows users t
 - **User Input**: Interactive console-based interface
 
 ## Author
-**[Your Full Name Here]**
+**Yours truly, Loftyyyy**
