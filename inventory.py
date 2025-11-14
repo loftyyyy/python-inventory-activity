@@ -21,11 +21,12 @@ def main():
                     continue
                 
                 item_price = float(input("Enter item price: "))
-                items.append(item_name)
-                item_prices[item_name] = item_price
                 if(item_price < 0):
                     print("Price cannot be negative. Please try again.\n")
                     continue
+
+                items.append(item_name)
+                item_prices[item_name] = item_price
                     
                 print(f"Item '{item_name}' with price {item_price} added to inventory. Please try again")
                 print("Item added successfully")
@@ -37,12 +38,15 @@ def main():
                     print(f"Item '{item_name}' not found in inventory.\n")
                 else:
                     item_price = float(input("Enter new item price: "))
-                    item_prices[item_name] = item_price
+
                     if(item_price < 0):
                         print("Price cannot be negative. Please try again.\n")
                         continue
+
+                    previous_price = item_prices[item_name]
+                    item_prices[item_name] = item_price
                     
-                    print(f"Price for item '{item_name}' updated to {item_price}.\n")
+                    print(f"Price for item '{item_name}', updated from {previous_price} to {item_price}.\n")
                     print("Price updated successfully")
 
             elif input_option == "3":
